@@ -27,9 +27,9 @@
     .container
         max-width: 576px
         width: 90%
-    .navbar
-        &__search, &-menu, &__user
-            visibility: hidden
+        .navbar
+            &__search, &-menu, &__user
+                display: none
     .menu
         &-button
             display: flex
@@ -47,7 +47,16 @@
                 height: 1px
                 background-color: $text-color
 
-    @media (max-width: 576px)
+@media (max-width: 576px)
+    .container
+        width: 90%
         .logo
             width: 99px
+
+@media (min-width: 320px) and (max-width: 480px)
+    .container
+        width: 90%
+        .logo
+            width: 99px
+    
     

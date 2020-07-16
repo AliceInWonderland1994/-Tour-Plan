@@ -513,8 +513,8 @@ template {
     max-width: 576px;
     width: 90%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
-    visibility: hidden;
+  .container .navbar__search, .container .navbar-menu, .container .navbar__user {
+    display: none;
   }
   .menu-button {
     display: -webkit-box;
@@ -544,8 +544,20 @@ template {
   }
 }
 
-@media (max-width: 768px) and (max-width: 576px) {
-  .logo {
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .container .logo {
+    width: 99px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  .container .logo {
     width: 99px;
   }
 }
