@@ -535,6 +535,7 @@ template {
             justify-content: space-between;
     background-color: #ffffff;
     border: none;
+    outline: none;
     cursor: pointer;
   }
   .menu-button__line {
