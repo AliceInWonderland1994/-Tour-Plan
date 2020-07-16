@@ -1,10 +1,14 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+        width: 90%
 
 @media (max-width: 992px)
     .container
         max-width: 700px
+        width: 90%
+    .logo
+        width: 132px
     .navbar
         &-top
             padding: 30px 0
@@ -17,7 +21,29 @@
                 font-size: 12px
                 line-height: 15px
 @media (max-width: 768px)
-    .comtainer
+    .container
         max-width: 576px
         width: 90%
+    .navbar
+        &__search, &-menu, &__user
+            visibility: hidden
+    .menu
+        &-button
+            display: flex
+            width: 16px
+            height: 11px
+            align-items: center
+            flex-direction: column
+            justify-content: space-between
+            background-color: $light
+            border: none
+            cursor: pointer
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $text-color
+
+    @media (max-width: 576px)
+        .logo
+            width: 99px
     
