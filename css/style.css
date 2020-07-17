@@ -669,6 +669,8 @@ template {
   }
   .stars__rating {
     margin-left: 3px;
+    height: 6px;
+    width: 6px;
   }
   .hotel-wrapper {
     -webkit-box-pack: justify;
