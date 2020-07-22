@@ -801,7 +801,6 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
-    width: 90%;
   }
   .slider {
     width: 590px;
@@ -817,7 +816,6 @@ template {
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
-    width: 90%;
   }
   .logo {
     width: 132px;
@@ -868,7 +866,6 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 90%;
   }
   .container .navbar__search, .container .navbar-menu, .container .navbar__user {
     display: none;
@@ -965,12 +962,18 @@ template {
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 456px) {
   .container {
     width: 90%;
   }
-  .container .logo {
-    width: 99px;
+  .slider {
+    height: 179px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
