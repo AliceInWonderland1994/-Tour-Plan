@@ -801,6 +801,7 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    width: auto;
   }
   .slider {
     width: 590px;
@@ -856,7 +857,7 @@ template {
   }
   .booking {
     width: 340px;
-    padding: 26px;
+    padding: 20px;
   }
   .map {
     width: 340px;
