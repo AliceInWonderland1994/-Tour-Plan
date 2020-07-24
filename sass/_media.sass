@@ -6,10 +6,11 @@
     .container
         max-width: 960px
         width: auto
-    .slider
-        width: 590px    
-    .swiper
-        &-slide
+    .hotel
+        &__slide
+            width: 590px    
+    .hotel
+        &-slider
             &__image
                 width: 100%
                 height: 100%
@@ -40,13 +41,22 @@
             margin-bottom: 30px
         &-details
             flex-direction: row
-    .slider
-        width: 100%
+        &-slider
+            width: 100%
     .booking
         width: 340px
         padding: 20px
     .map
         width: 340px
+    .reviews
+        &-slider
+            &__item
+                max-width: 580px
+        &__title
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 50px
 
 @media (max-width: 768px)
     .container
@@ -81,6 +91,7 @@
             height: 6px
             width: 6px
     .hotel
+        padding: 18px 0 40px 0 
         &-wrapper
             justify-content: space-between
         &-info
@@ -91,33 +102,55 @@
             &__offer
                 order: -1
                 margin-left: 0
-    .slider
-        height: 350px
-    .hotel
         &-details
             flex-direction: column
             min-height: 450px
+        &-slider
+            height: 350px
+        &__slider
+            margin-bottom: 20px
     .booking
         width: 100%
     .map
         width: 100%
-    .hotel
-        &__slider
-            margin-bottom: 20px
     .newsletter
         &-wrapper
             flex-direction: column
             align-items: flex-start
             max-width: 576px
             width: 92%
+    .reviews
+        &-slider
+            &__item
+                padding: 0 30px 30px
+                &::before, &::after
+                    display: none
+            &__button
+                top: 32px
+                &--prev
+                    left: 50%
+                    transform: translate(-50%,0)
+                    margin-left: -100px
+                &--next
+                    right: 50%
+                    transform: translate(50%,0)
+                    margin-right: -100px
+        &__title
+            font-weight: bold    
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 42px
 
 @media (max-width: 576px)
     .container
         width: 90%
     .logo
         width: 99px
-    .slider
-        height: 250px
+    .hotel
+        &__slider
+            margin-bottom: 20px
+        &-slider
+            height: 250px
     .newsletter
         padding: 76px 0 83px
         &__title
@@ -136,9 +169,9 @@
 @media (max-width: 456px)
     .container
         width: 90%
-    .slider
-        height: 179px
-    
+    .hotel
+        &-slider
+            height: 179px
 @media (min-width: 320px) and (max-width: 480px)
     .container
         width: 90%
