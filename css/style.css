@@ -452,6 +452,7 @@ template {
   border: none;
   background-color: #ec1f46;
   cursor: pointer;
+  outline: none;
 }
 
 .navbar .user {
@@ -889,6 +890,8 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
+  outline: none;
 }
 
 @media (min-width: 1200px) {
