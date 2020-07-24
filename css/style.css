@@ -807,11 +807,11 @@ template {
 .newsletter {
   position: relative;
   padding: 87px 0 87px;
-  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 260px;
+  background: transparent;
 }
 
 .newsletter:before {
@@ -1247,7 +1247,8 @@ template {
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 42px;
+    max-width: 245px;
+    margin: 0 auto 42px;
   }
 }
 
