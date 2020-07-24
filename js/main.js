@@ -22,3 +22,4 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
   keyboard: true,
 });
+

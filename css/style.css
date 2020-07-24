@@ -631,6 +631,10 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.swiper-container {
+  margin: 0;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -802,11 +806,12 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px;
+  padding: 87px 0 87px;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-height: 260px;
 }
 
 .newsletter:before {
