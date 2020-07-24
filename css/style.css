@@ -811,7 +811,7 @@ template {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-height: 260px;
+  min-height: 260px;
 }
 
 .newsletter:before {
@@ -1092,7 +1092,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hotel__slider {
+  .hotel__slide {
     margin-bottom: 30px;
   }
   .hotel-details {
