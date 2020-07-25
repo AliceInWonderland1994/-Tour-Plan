@@ -1115,6 +1115,7 @@ template {
 }
 
 .card__button {
+  font-family: Nunito;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -1199,6 +1200,9 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .reviews {
+    padding: 40px 0 60px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1324,6 +1328,9 @@ template {
             align-items: flex-start;
     max-width: 576px;
     width: 92%;
+  }
+  .reviews {
+    padding: 40px 0 50px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
