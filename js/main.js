@@ -32,8 +32,8 @@ ymaps.ready(init);
 }
 
 var placemark = new ymaps.Placemark([40.979865, 28.886546], {
-    balloonContent: 'Hilton Grand Hotel'
-    hintContent: 'Hilton Grand Hotel', 
+    balloonContent: 'Hilton Grand Hotel',
+    hintContent: 'Hilton Grand Hotel' 
   });
 
 myMap.geoObjects.add(placemark);
