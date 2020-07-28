@@ -1574,9 +1574,6 @@ template {
   .navbar-top {
     padding: 6px 0;
   }
-  .navbar__mobile {
-    overflow: hidden;
-  }
   .navbar__mobile_fixed {
     position: fixed;
     left: 0;
