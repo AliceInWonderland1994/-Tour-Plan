@@ -114,12 +114,25 @@
                 grid-column: 5 / 7
 
 @media (max-width: 768px)
+    body
+        padding-top: 100px
     .container
         max-width: 576px
         width: 92%
-        .navbar
-            &__search, &-menu, &__user
-                display: none
+    .navbar
+        &__mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &__search
+            transform: scale(0)
+        &__user
+            transform: scale(0)
+        &-bottom
+            display: none
     .menu
         &-button
             display: flex
