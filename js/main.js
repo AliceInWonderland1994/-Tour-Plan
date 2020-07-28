@@ -40,7 +40,7 @@ function init(){
 }
 
 
-$('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg'});
+$('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
 
 
 var menuButton = document.querySelector(".menu-button");
