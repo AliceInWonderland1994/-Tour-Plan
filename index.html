@@ -17,14 +17,14 @@
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo-image">
                 </a>
 
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search_mobile_hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon-search">
                     </button>
                 </form>
 
-                <a href="#" class="user navbar__user">
+                <a href="#" class="user navbar__user navbar__user_mobile_hidden">
                     <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="avatar user__avatar" />
                     <span class="user__name">Nathan</span>
 
@@ -43,6 +43,20 @@
             <div class="container">
                 <nav class="navigation">
                     <ul class="navbar-menu">
+                        <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+                            <a href="#" class="user navbar__user navbar__user_mobile_visible">
+                            <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="avatar user__avatar" />
+                            <span class="user__name user__name_light">Nathan</span></a>
+                            <!-- /.user -->
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+                            <form action="#" class="search navbar__search navbar__search_mobile_visible">
+                            <input type="text" class="search__input search__input_bottom" placeholder="Search Location">
+                            <button class="search__button">
+                                <img src="img/search.svg" alt="Icon-search">
+                            </button>
+                            </form>
+                        </li>
                         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
                         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
                         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -410,8 +424,8 @@
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c53a5d15-6607-46da-a195-acb930a34cc8&lang=ru_RU" type="text/javascript"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

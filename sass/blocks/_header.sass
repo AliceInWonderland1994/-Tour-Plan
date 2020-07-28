@@ -26,6 +26,10 @@
             font-weight: bold
             font-size: 14px
             line-height: 18px
+        &__item
+            &_mobile
+                &_visible
+                    display: none
     
     .logo
         width: 177px
@@ -57,7 +61,6 @@
             background-color: $primary-color
             cursor: pointer
             outline: none
-    
     .user
         display: flex
         align-items: center
@@ -72,3 +75,7 @@
             font-size: 14px
             line-height: 18px
             color: $text-color
+            &_light
+                color: $light
+                margin-left: 0
+                margin-top: 10px

@@ -115,11 +115,13 @@
 
 @media (max-width: 768px)
     body
-        padding-top: 100px
+        padding-top: 70px
     .container
         max-width: 576px
         width: 92%
     .navbar
+        &-top
+            padding: 6px 0
         &__mobile
             &_fixed
                 position: fixed
@@ -127,12 +129,39 @@
                 top: 0
                 right: 0
                 z-index: 99
-        &__search
-            transform: scale(0)
         &__user
-            transform: scale(0)
+            &_mobile
+                &_hidden
+                    transform: scale(0)
+                &_visible
+                    display: flex  
+        &__search
+            &_mobile
+                &_hidden
+                    transform: scale(0)
+                &_visible
+                    display: flex
+                    margin-bottom: 40px
+        &__user
+            flex-direction: column
+            justify-content: center
         &-bottom
             display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 70px
+            padding-top: 30px
+            &_visible
+                display: block
+        &-menu
+            flex-direction: column
+            &__item
+                margin-bottom: 20px
+                &_mobile
+                    &_visible
+                        display: block
     .menu
         &-button
             display: flex
@@ -242,6 +271,10 @@
 @media (max-width: 576px)
     .container
         width: 90%
+    .navbar
+        &-bottom
+            &_visible
+                display: block
     .logo
         width: 99px
     .hotel
