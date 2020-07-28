@@ -1863,6 +1863,7 @@ template {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-row-gap: 30px;
+    grid-column-gap: 0;
   }
   .footer__logo {
     -ms-grid-row: 1;
