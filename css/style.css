@@ -815,6 +815,223 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding: 40px 0 70px;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  grid-gap: 30px;
+}
+
+.packages__title {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin: 0;
+}
+
+.packages__image {
+  width: 366px;
+  height: 500px;
+  border-radius: 8px 8px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages__big_image {
+  width: 366px;
+  height: 500px;
+  border-radius: 8px 0 0 8px;
+}
+
+.packages__big-card {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.packages__hotel_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0A223D;
+  color: #ffffff;
+  padding: 46px 21px 30px 44px;
+  border-radius: 0 8px 8px 0;
+}
+
+.packages__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55px;
+  margin-bottom: 6px;
+}
+
+.packages__big_name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 27px;
+}
+
+.packages__big_discription {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin: 0 0 34px;
+}
+
+.packages__big_ul {
+  margin: 0 0 26px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.packages__li {
+  margin-bottom: 11px;
+}
+
+.packages__icon {
+  margin-right: 16px;
+}
+
+.packages__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages__old_price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.packages__button {
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 27px;
+  color: #ffffff;
+  background-color: #ec1f46;
+  border-radius: 4px;
+  border: none;
+}
+
+.packages__bottom_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages__best_price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages__card {
+  color: #ffffff;
+  width: 366px;
+  height: 500px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages__card_belle-mare {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.packages__card_white-palace {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.packages__card_luxury-palace {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.packages__card_five-star {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.packages__hotel_information {
+  position: absolute;
+  top: 250;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0A223D;
+  padding: 30px 21px 25px 32px;
+}
+
+.packages__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 23px;
+}
+
+.packages__ul {
+  list-style: none;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
 .newsletter {
   position: relative;
   padding: 87px 0 87px;
