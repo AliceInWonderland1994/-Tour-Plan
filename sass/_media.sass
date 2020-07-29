@@ -18,10 +18,35 @@
     .card
         width: 230px
         height: 230px
+        background-color: $dark
+    .packages
+        &__title
+            font-size: 32px
+            text-align: center
+        &__big
+            &_card
+                grid-column: span 2
+        &__hotel
+            &_info
+                left: 300px
+        &__card
+            width: 300px
+        &__hotel
+            &_information
+                height: 250px
+                padding: 20px
+        &__big
+            &_name
+                margin-bottom: 20px
+        &__discription
+            margin-bottom: 25px
+        &__big
+            &_ul
+                margin-bottom: 20px
     .footer
         &__input
             flex-basis: 100%
-
+        
 
 @media (max-width: 992px)
     .container, .newsletter-wrapper
@@ -42,6 +67,7 @@
         &__input
             width: 340px
     .hotel
+        padding-bottom: 60px
         &-grid
             flex-direction: column
         &__slide
@@ -55,6 +81,39 @@
         padding: 20px
     .map
         width: 340px
+    .packages
+        &-wrapper
+            grid-template-columns: repeat(2, 1fr)
+        &__title
+            grid-row: 1
+            grid-column: 1 / 3
+            font-size: 30px
+            margin: 0
+        &__big
+            &_card
+                grid-row: 2
+                grid-column: span 2
+        &__hotel
+            &_info
+                padding: 45px 21px 30px 44px
+                left: 366px
+        &__card
+            width: 335px
+            height: 500px
+            &_belle-mare
+                grid-row: 3
+                grid-column: 1
+            &_white-palace
+                grid-row: 3
+                grid-column: 2
+            &_luxury-palace
+                grid-row: 4
+                grid-column: 1
+            &_five-star
+                grid-row: 4
+                grid-column: 2
+            &_blue-haven
+                display: none
     .reviews
         padding: 40px 0 60px
         &-slider
@@ -71,6 +130,8 @@
             flex-wrap: wrap
         &__card
             margin-bottom: 20px
+            &__blue-haven
+                display: none
     .card
         width: 340px
         height: 255px
@@ -211,6 +272,28 @@
         width: 100%
     .map
         width: 100%
+    .packages
+        &-wrapper
+            grid-gap: 20px
+        &__hotel
+            &_info
+                left: 300px
+                padding-left: 30px
+        &__discription
+            font-size: 13px
+            margin-bottom: 20px
+        &__card
+            width: 280px
+            &_blue-haven
+                display: none
+        &__big
+            &_name
+                margin-bottom: 20px
+        &__discription
+            margin-bottom: 25px
+        &__big
+            &_ul
+                margin-bottom: 16px
     .newsletter
         &-wrapper
             flex-direction: column
@@ -283,6 +366,76 @@
             margin-bottom: 20px
         &-slider
             height: 250px
+    .packages
+        &-wrapper
+            grid-template-columns: 1fr
+            grid-row-gap: 30px
+            grid-column-gap: 0px
+        &__title
+            grid-row: 1
+            grid-column: 1
+            font-weight: bold
+            font-size: 20px
+            line-height: 23px
+        &__big
+            &_card
+                display: none
+        &__image
+            width: 100%
+            height: 300px
+        &__card
+            height: 300px
+            &_blue-haven
+                display: block
+                grid-row: 2
+                grid-column: 1
+                width: 100%
+            &_belle-mare
+                grid-row: 3
+                grid-column: 1
+                width: 100%
+            &_white-palace
+                grid-row: 4
+                grid-column: 1
+                width: 100%
+            &_luxury-palace
+                grid-row: 5
+                grid-column: 1
+                width: 100%
+            &_five-star
+                grid-row: 6
+                grid-column: 1
+                width: 100%
+        &__mobile
+            &_wrapper
+                display: flex
+                flex-direction: column
+                align-items: center
+        &__hotel
+            &_information
+                display: flex
+                justify-content: space-between
+                height: 150px
+                padding: 20px
+                opacity: 0.9
+        &__name
+            margin-bottom: 15px
+        &__ul
+            margin: 0
+        &__li
+            margin-bottom: 6px
+        &__bottom
+            &_wrap
+                display: flex
+                flex-direction: column
+                flex-wrap: wrap
+        &__best
+            &_price
+                font-size: 20px
+                margin-bottom: 15px
+        &__button
+            font-size: 14px
+            padding: 10px 30px
     .newsletter
         padding: 76px 0 83px
         &__title
