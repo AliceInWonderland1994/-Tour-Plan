@@ -23,6 +23,7 @@
         &__title
             font-size: 32px
             text-align: center
+            margin: 0
         &__big
             &_card
                 grid-column: span 2
@@ -367,16 +368,17 @@
         &-slider
             height: 250px
     .packages
+        padding: 20px 0 40px
         &-wrapper
             grid-template-columns: 1fr
-            grid-row-gap: 30px
+            grid-row-gap: 20px
             grid-column-gap: 0px
         &__title
             grid-row: 1
             grid-column: 1
             font-weight: bold
             font-size: 20px
-            line-height: 23px
+            padding: 0
         &__big
             &_card
                 display: none
@@ -423,7 +425,7 @@
         &__ul
             margin: 0
         &__li
-            margin-bottom: 6px
+            margin-bottom: 4px
         &__bottom
             &_wrap
                 display: flex
@@ -509,6 +511,16 @@
     .hotel
         &-slider
             height: 179px
+    .packages
+        &__best
+            &_price
+                font-size: 18px
+                margin-bottom: 25px
+        &__button
+            font-size: 10px
+            line-height: 13px
+            padding: 5px 15px
+
 @media (min-width: 320px) and (max-width: 480px)
     .container
         width: 90%
