@@ -52,8 +52,6 @@
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
-    .logo
-        width: 132px
     .navbar
         &-top
             padding: 30px 0
@@ -64,6 +62,8 @@
             &__link
                 font-size: 12px
                 line-height: 15px
+    .logo
+        max-width: 132px
     .search
         &__input
             width: 340px
@@ -183,31 +183,28 @@
         width: 92%
     .navbar
         &-top
-            padding: 6px 0
+            height: 70px
+            &__user
+                &_mobile
+                    &_hidden
+                        transform: scale(0)
+                    &_visible
+                        display: flex
+            &__search
+                &_mobile
+                    &_hidden
+                        transform: scale(0)
+                    &_visible
+                        display: flex
+                        width: 90%
+                        margin-bottom: 40px
         &__mobile
             &_fixed
                 position: fixed
                 left: 0
                 top: 0
                 right: 0
-                z-index: 99
-        &__user
-            &_mobile
-                &_hidden
-                    transform: scale(0)
-                &_visible
-                    display: flex  
-        &__search
-            &_mobile
-                &_hidden
-                    transform: scale(0)
-                &_visible
-                    display: flex
-                    width: 90%
-                    margin-bottom: 40px
-        &__user
-            flex-direction: column
-            justify-content: center
+                z-index: 99 
         &-bottom
             display: none
             position: fixed
@@ -225,6 +222,9 @@
                 &_mobile
                     &_visible
                         display: block
+            &__user
+                flex-direction: column
+                justify-content: center
     .menu
         &-button
             display: flex
@@ -361,7 +361,7 @@
             &_visible
                 display: block
     .logo
-        width: 99px
+        min-width: 99px
     .hotel
         &__slider
             margin-bottom: 20px
@@ -504,7 +504,7 @@
             margin-bottom: 15px
         &__message
             margin-bottom: 15px
-        
+
 @media (max-width: 456px)
     .container
         width: 90%
@@ -524,6 +524,16 @@
 @media (min-width: 320px) and (max-width: 480px)
     .container
         width: 90%
+    .navbar
+        &-menu
+            &__search
+                &_mobile
+                    &_visible
+                        width: 80%
+                        left: 10%
+                        right: 10%
+    .logo
+        min-width: 99px
 
     
     
