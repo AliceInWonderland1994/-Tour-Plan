@@ -22,24 +22,6 @@ navigation: {
 keyboard: true,
 });
 
-ymaps.ready(init);
-function init(){
-  let myMap = new ymaps.Map("map", {
-              center: [40.979865, 28.886546],
-              zoom: 15
-  });
-
-  let placemark = new ymaps.Placemark([40.979865, 28.886546], {
-              balloonContent: 'Hilton Grand Hotel',
-              hintContent: 'Hilton Grand Hotel'
-          });
-
-  myMap.geoObjects.add(placemark);
-  placemark.balloon.open();
-
-}
-
-
 $('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
 
 
