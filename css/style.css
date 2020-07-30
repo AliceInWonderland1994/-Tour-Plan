@@ -864,6 +864,7 @@ template {
   border-radius: 8px 0 0 8px;
   width: 366px;
   height: 500px;
+  border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -939,6 +940,12 @@ template {
 }
 
 .packages__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 11px;
 }
 
@@ -2090,7 +2097,7 @@ template {
   .packages__card_blue-haven {
     display: none;
   }
-  .packages__big_name {
+  .packages__card_name {
     margin-bottom: 20px;
   }
   .packages__discription {
@@ -2195,22 +2202,7 @@ template {
   }
 }
 
-@media (max-width: 576px) {
-  .container {
-    width: 90%;
-  }
-  .navbar-bottom_visible {
-    display: block;
-  }
-  .logo {
-    min-width: 99px;
-  }
-  .hotel__slider {
-    margin-bottom: 20px;
-  }
-  .hotel-slider {
-    height: 250px;
-  }
+@media (max-width: 630px) {
   .packages {
     padding: 20px 0 40px;
   }
@@ -2234,10 +2226,11 @@ template {
   }
   .packages__image {
     width: 100%;
-    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .packages__card {
-    height: 300px;
+    height: 350px;
   }
   .packages__card_blue-haven {
     display: block;
@@ -2275,6 +2268,33 @@ template {
     grid-column: 1;
     width: 100%;
   }
+  .packages__hotel_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 21px 25px 32px;
+    height: 50%;
+  }
+  .packages__name {
+    margin-bottom: 20px;
+  }
+  .packages__li {
+    margin-bottom: 11px;
+  }
+  .packages__old_price {
+    margin-bottom: 5px;
+  }
+  .packages__best_price {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .packages__button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
   .packages__mobile_wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2283,48 +2303,36 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .packages__hotel_information {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 150px;
-    padding: 20px;
-    opacity: 0.9;
-  }
-  .packages__name {
-    margin-bottom: 15px;
-  }
-  .packages__ul {
-    margin: 0;
-  }
-  .packages__li {
-    margin-bottom: 4px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .packages__bottom_wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-  .packages__best_price {
-    font-size: 20px;
-    margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
   }
-  .packages__button {
-    font-size: 14px;
-    padding: 10px 30px;
+  .navbar-bottom_visible {
+    display: block;
+  }
+  .logo {
+    min-width: 99px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+  .hotel-slider {
+    height: 250px;
   }
   .newsletter {
     padding: 76px 0 83px;
@@ -2449,15 +2457,6 @@ template {
   .hotel-slider {
     height: 179px;
   }
-  .packages__best_price {
-    font-size: 18px;
-    margin-bottom: 25px;
-  }
-  .packages__button {
-    font-size: 10px;
-    line-height: 13px;
-    padding: 5px 15px;
-  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2470,6 +2469,52 @@ template {
   }
   .logo {
     min-width: 99px;
+  }
+  .packages__card {
+    height: 500px;
+  }
+  .packages__hotel_information {
+    height: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .packages__mobile_wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages__bottom_wrap {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages__ul {
+    margin: 0;
+  }
+  .packages__best_price {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .packages__button {
+    font-size: 10px;
+    line-height: 13px;
+    padding: 5px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
