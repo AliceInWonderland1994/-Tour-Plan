@@ -853,6 +853,8 @@ template {
   border-radius: 8px 8px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .packages__big_image {
@@ -867,6 +869,8 @@ template {
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .packages__big_card {
@@ -2226,8 +2230,12 @@ template {
   }
   .packages__image {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-position: 0 -50px;
+       object-position: 0 -50px;
+  }
+  .packages__image_five {
+    -o-object-position: 0 -200px;
+       object-position: 0 -200px;
   }
   .packages__card {
     height: 350px;
