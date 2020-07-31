@@ -2471,7 +2471,7 @@ template {
     min-width: 99px;
   }
   .packages__card {
-    height: 500px;
+    height: 450px;
   }
   .packages__hotel_information {
     height: 55%;
@@ -2487,34 +2487,36 @@ template {
             align-items: flex-start;
   }
   .packages__mobile_wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
   }
   .packages__bottom_wrap {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: inherit;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .packages__ul {
-    margin: 0;
+    margin-bottom: 20px;
   }
   .packages__best_price {
-    font-size: 18px;
-    margin-bottom: 15px;
+    margin: 0;
   }
   .packages__button {
-    font-size: 10px;
-    line-height: 13px;
-    padding: 5px 15px;
+    font-size: 12px;
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
