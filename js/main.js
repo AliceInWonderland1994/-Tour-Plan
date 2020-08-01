@@ -49,4 +49,11 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  document.addEventListener('keydown', function (e) {
+    if(e.keyCode === 27) document.getElementById('booking-modal').hidden= 1;
+  });
+  document.addEventListener('keydown', function (e) {
+    if(e.keyCode === 27) document.getElementById('rating-modal').hidden= 1;
+  }); 
 });
