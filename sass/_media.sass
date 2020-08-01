@@ -57,8 +57,8 @@
     .navbar
         &-top
             padding: 30px 0
-        &__search
-            margin-left: auto
+            &__search
+                margin-left: auto
         &-menu
             padding: 22px 0
             &__link
@@ -176,6 +176,16 @@
                 justify-content: flex-start
             &-payments
                 grid-column: 5 / 7
+    .modal
+        &__dialog
+            padding: 30px 60px
+        &__form
+            &--bottom
+                flex-wrap: wrap
+        &__button
+            margin-right: 30px
+        &__info
+            margin-top: 15px
 
 @media (max-width: 768px)
     body
@@ -353,6 +363,17 @@
             align-items: flex-start
             &-ul
                 margin-bottom: 10px
+    .modal
+        &__dialog
+            padding: 30px 50px
+        &__button
+            margin-right: 30px
+        &__input
+            width: 100%
+            margin-bottom: 10px
+            font-size: 12px
+            line-height: 15px
+            padding: 15px 20px
 
 @media (max-width: 630px)
     .packages
@@ -428,8 +449,7 @@
             &_wrap
                 flex-direction: column
                 align-items: flex-end
-                
-
+                    
 @media (max-width: 576px)
     .container
         width: 90%
@@ -510,6 +530,15 @@
             margin-bottom: 15px
         &__message
             margin-bottom: 15px
+    .modal
+        &__dialog
+            padding: 20px 30px
+        &__title
+            font-size: 14px
+        &__button
+            width: 100px
+            height: 40px
+            padding: 13px
 
 @media (max-width: 456px)
     .container
@@ -557,6 +586,22 @@
                 margin: 0
         &__button
             font-size: 12px
+            padding: 10px 20px
+    .modal
+        &__input
+            width: 100%
+            margin-bottom: 10px
+            font-size: 12px
+            line-height: 15px
+            padding: 10px 20px
+            height: 30px
+        &__message
+            width: 100%
+            outline: none
+            margin-bottom: 10px
+            font-size: 12px
+            line-height: 15px
+            resize: none
             padding: 10px 20px
 
     

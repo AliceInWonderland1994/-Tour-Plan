@@ -35,8 +35,8 @@ img {
 }
 
 .button {
-  min-width: 160px;
-  min-height: 50px;
+  width: 160px;
+  height: 50px;
   padding: 18px;
   font-weight: bold;
   font-size: 12px;
@@ -726,7 +726,7 @@ template {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 29px 26px 29px 26px;
 }
 
 .booking__info {
@@ -764,11 +764,10 @@ template {
 .booking__per-room {
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 9px;
 }
 
 .booking__room {
-  margin-top: 4px;
+  height: 100%;
 }
 
 .booking__text {
@@ -842,6 +841,7 @@ template {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  padding: 13px;
 }
 
 .map {
@@ -1740,6 +1740,7 @@ template {
   margin-bottom: 15px;
   font-size: 12px;
   line-height: 15px;
+  resize: none;
 }
 
 .modal__title {
@@ -1750,6 +1751,7 @@ template {
   margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 15px 0;
 }
 
 .modal__form--bottom {
@@ -1829,7 +1831,7 @@ template {
   .navbar-top {
     padding: 30px 0;
   }
-  .navbar__search {
+  .navbar-top__search {
     margin-left: auto;
   }
   .navbar-menu {
@@ -2020,6 +2022,19 @@ template {
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-column: 5 / 7;
+  }
+  .modal__dialog {
+    padding: 30px 60px;
+  }
+  .modal__form--bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal__button {
+    margin-right: 30px;
+  }
+  .modal__info {
+    margin-top: 15px;
   }
 }
 
@@ -2295,6 +2310,19 @@ template {
   .footer__bottom-ul {
     margin-bottom: 10px;
   }
+  .modal__dialog {
+    padding: 30px 50px;
+  }
+  .modal__button {
+    margin-right: 30px;
+  }
+  .modal__input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 15px 20px;
+  }
 }
 
 @media (max-width: 630px) {
@@ -2547,6 +2575,17 @@ template {
   .footer__message {
     margin-bottom: 15px;
   }
+  .modal__dialog {
+    padding: 20px 30px;
+  }
+  .modal__title {
+    font-size: 14px;
+  }
+  .modal__button {
+    width: 100px;
+    height: 40px;
+    padding: 13px;
+  }
 }
 
 @media (max-width: 456px) {
@@ -2615,6 +2654,23 @@ template {
   }
   .packages__button {
     font-size: 12px;
+    padding: 10px 20px;
+  }
+  .modal__input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 20px;
+    height: 30px;
+  }
+  .modal__message {
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    resize: none;
     padding: 10px 20px;
   }
 }
