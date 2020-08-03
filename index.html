@@ -356,7 +356,7 @@
                 </span>
             </h2>
             <form action="send.php" method="POST" class="subscribe newsletter__subscribe" >
-                <input type="email" class="subscribe__input" placeholder="Your email address" name="email" />
+                <input type="email" class="subscribe__input" placeholder="Your email address" name="email"/>
                 <button class="subscribe__button">Send</button>
             </form>
         </div>
@@ -568,8 +568,12 @@
                 <div class="footer__contact-form">
                     <h3 class="footer__title">Send us a message</h3>
                         <form action="send.php" method="POST" class="form footer__form">
-                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name"/>
-                            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" />
+                            <div class="footer__input-group">
+                                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
+                            </div>
+                            <div class="footer__input-group">
+                                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+                            </div>
                             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                             <div class="form footer__form footer__form--bottom">
                                 <button class="button footer__button" type="submit">Send</button>
@@ -605,9 +609,9 @@
             </a>
             <h3 class="modal__title">Booking</h3>
             <form action="send.php" method="POST" class="form modal__form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name"/>
-                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" />
-                <input type="email" class="input modal__input" placeholder="Email*" name="phone" />
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
+                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required/>
+                <input type="email" class="input modal__input" placeholder="Email*" name="email" required/>
                 <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                 <div class="form modal__form modal__form--bottom">
                     <button class="button modal__button" type="submit">Send</button>
@@ -625,10 +629,10 @@
                 <img src="img/close.svg" alt="Icon: close">
             </a>
             <h3 class="modal__title">Send us a feedback</h3>
-            <form action="send.php" method="POST" class="form modal__form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name"/>
-                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" />
-                <input type="email" class="input modal__input" placeholder="Email*" name="phone" />
+            <form action="send.php" method="POST" class="form modal__form" id="modal-form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
+                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required />
+                <input type="email" class="input modal__input" placeholder="Email*" name="phone" required />
                 <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                 <div class="form modal__form modal__form--bottom">
                     <button class="button modal__button" type="submit">Send</button>
@@ -642,6 +646,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -56,6 +56,11 @@ img {
   color: #E0E0E0;
 }
 
+.invalid {
+  color: #ec1f46;
+  border-bottom: 1px solid #ec1f46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1607,10 +1612,15 @@ template {
 }
 
 .footer__input {
-  padding: 0 32px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
-  -ms-flex-preferred-size: 47px;
-      flex-basis: 47px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 
 .footer__message {
@@ -1618,7 +1628,8 @@ template {
   outline: none;
   resize: none;
   margin-bottom: 23px;
-  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .footer__bottom {
@@ -1727,7 +1738,8 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   font-size: 12px;
   line-height: 15px;
   padding: 18px 23px;
@@ -1737,10 +1749,15 @@ template {
   width: 100%;
   min-height: 123px;
   outline: none;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   font-size: 12px;
   line-height: 15px;
   resize: none;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__title {
@@ -1818,7 +1835,7 @@ template {
   .packages__big_ul {
     margin-bottom: 20px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1965,7 +1982,7 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
@@ -2288,7 +2305,7 @@ template {
     grid-row: 5;
     grid-column: span 6;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2684,8 +2701,6 @@ template {
   .modal__input {
     width: 100%;
     margin-bottom: 12px;
-    font-size: 10px;
-    line-height: 15px;
     padding: 10px 20px;
     height: 30px;
   }
