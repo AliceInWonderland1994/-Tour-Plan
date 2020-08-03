@@ -178,12 +178,10 @@
                 grid-column: 5 / 7
     .modal
         &__dialog
-            padding: 30px 60px
+            padding: 30px 70px
         &__form
             &--bottom
                 flex-wrap: wrap
-        &__button
-            margin-right: 30px
         &__info
             margin-top: 15px
 
@@ -365,15 +363,29 @@
                 margin-bottom: 10px
     .modal
         &__dialog
+            position: fixed
+            width: 400px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
             padding: 30px 50px
-        &__button
-            margin-right: 30px
         &__input
             width: 100%
-            margin-bottom: 10px
+            height: 40px
+            margin-bottom: 15px
             font-size: 12px
             line-height: 15px
             padding: 15px 20px
+        &__form
+            &--bottom
+                flex-wrap: wrap
+        &__button
+            width: 100%
+        &__info
+            order: -1
+            margin-top: 0
+            margin-bottom: 10px
+
 
 @media (max-width: 630px)
     .packages
@@ -532,13 +544,16 @@
             margin-bottom: 15px
     .modal
         &__dialog
-            padding: 20px 30px
-        &__title
-            font-size: 14px
+            padding: 30px 40px
+        &__form
+            &--bottom
+                flex-wrap: wrap
         &__button
-            width: 100px
-            height: 40px
-            padding: 13px
+            width: 100%
+        &__info
+            order: -1
+            margin-top: 0
+            margin-bottom: 10px
 
 @media (max-width: 456px)
     .container
@@ -588,10 +603,13 @@
             font-size: 12px
             padding: 10px 20px
     .modal
+        &__dialog
+            width: 85%
+            padding: 30px
         &__input
             width: 100%
-            margin-bottom: 10px
-            font-size: 12px
+            margin-bottom: 12px
+            font-size: 10px
             line-height: 15px
             padding: 10px 20px
             height: 30px
@@ -599,10 +617,22 @@
             width: 100%
             outline: none
             margin-bottom: 10px
-            font-size: 12px
+            font-size: 10px
             line-height: 15px
             resize: none
             padding: 10px 20px
+        &__form
+            &--bottom
+                flex-wrap: wrap
+        &__button
+            width: 100%
+            height: 40px
+            padding: 12px
+        &__info
+            order: -1
+            margin-top: 0
+            margin-bottom: 10px
+            font-size: 10px
 
     
     

@@ -1695,7 +1695,7 @@ template {
 
 .modal__dialog {
   position: fixed;
-  max-width: 478px;
+  width: 478px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -2024,14 +2024,11 @@ template {
     grid-column: 5 / 7;
   }
   .modal__dialog {
-    padding: 30px 60px;
+    padding: 30px 70px;
   }
   .modal__form--bottom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .modal__button {
-    margin-right: 30px;
   }
   .modal__info {
     margin-top: 15px;
@@ -2311,17 +2308,35 @@ template {
     margin-bottom: 10px;
   }
   .modal__dialog {
+    position: fixed;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding: 30px 50px;
-  }
-  .modal__button {
-    margin-right: 30px;
   }
   .modal__input {
     width: 100%;
-    margin-bottom: 10px;
+    height: 40px;
+    margin-bottom: 15px;
     font-size: 12px;
     line-height: 15px;
     padding: 15px 20px;
+  }
+  .modal__form--bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal__button {
+    width: 100%;
+  }
+  .modal__info {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -2576,15 +2591,21 @@ template {
     margin-bottom: 15px;
   }
   .modal__dialog {
-    padding: 20px 30px;
+    padding: 30px 40px;
   }
-  .modal__title {
-    font-size: 14px;
+  .modal__form--bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .modal__button {
-    width: 100px;
-    height: 40px;
-    padding: 13px;
+    width: 100%;
+  }
+  .modal__info {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -2656,10 +2677,14 @@ template {
     font-size: 12px;
     padding: 10px 20px;
   }
+  .modal__dialog {
+    width: 85%;
+    padding: 30px;
+  }
   .modal__input {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-bottom: 12px;
+    font-size: 10px;
     line-height: 15px;
     padding: 10px 20px;
     height: 30px;
@@ -2668,10 +2693,27 @@ template {
     width: 100%;
     outline: none;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 15px;
     resize: none;
     padding: 10px 20px;
+  }
+  .modal__form--bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal__button {
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+  }
+  .modal__info {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
