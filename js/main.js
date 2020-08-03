@@ -49,4 +49,24 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  //Это то, что я тут навытворяла...
+  
+  /*$(closeModalButton).click(function() {
+    $(this).parents(modalDialog).fadeOut();
+    return false;
+  });
+
+  $(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+      $('.modal').fadeOut();
+		}
+  });
+  $('.modal').click(function(e) {
+		if ($(e.target).closest('.modal').length == 0) {
+			$(this).fadeOut();					
+		}
+	});*/
+  
 });
