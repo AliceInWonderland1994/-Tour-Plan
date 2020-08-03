@@ -2700,7 +2700,7 @@ template {
   }
   .modal__input {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     padding: 10px 20px;
     height: 30px;
   }
@@ -2729,6 +2729,9 @@ template {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 10px;
+  }
+  .invalid {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
