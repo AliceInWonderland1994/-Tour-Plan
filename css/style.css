@@ -859,6 +859,15 @@ template {
   overflow: hidden;
 }
 
+.map__iframe {
+  width: 100%;
+  height: 100%;
+  height: 213;
+  border: none;
+  aria-hidden: false;
+  tabindex: 0;
+}
+
 .packages {
   padding: 40px 0 70px;
 }
