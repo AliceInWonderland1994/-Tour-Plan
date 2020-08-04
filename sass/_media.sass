@@ -48,9 +48,9 @@
             &_
     .footer
         &__input
+            width: 100%
             &-group
-                flex-basis: 100%
-        
+                width: 100%
 
 @media (max-width: 992px)
     .container, .newsletter-wrapper
@@ -144,9 +144,6 @@
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
             grid-row-gap: 40px
-        &__input
-            &-group
-                flex-basis: 48%
         &__logo
             width: 104px
             grid-row: 1 / 2
@@ -356,14 +353,19 @@
                     grid-row: 5
                     grid-column: span 6
         &__input
+            width: 255px
             &-group
-                flex-basis: 100%
+                width: 255px
         &__bottom
             display: flex
             flex-direction: column
             align-items: flex-start
             &-ul
                 margin-bottom: 10px
+        &__input
+            width: 100%
+            &-group
+                width: 100%
     .modal
         &__dialog
             position: fixed
@@ -375,7 +377,6 @@
         &__input
             width: 100%
             height: 40px
-            margin-bottom: 15px
             font-size: 12px
             line-height: 15px
             padding: 15px 20px
@@ -605,13 +606,17 @@
         &__button
             font-size: 12px
             padding: 10px 20px
+    .footer
+        &__input
+            width: 100%
+            &-group
+                width: 100%
     .modal
         &__dialog
             width: 85%
             padding: 30px
         &__input
             width: 100%
-            margin-bottom: 5px
             padding: 10px 20px
             height: 30px
         &__message
@@ -634,7 +639,6 @@
             margin-top: 0
             margin-bottom: 10px
             font-size: 10px
-    .invalid
-        font-size: 12px
+        
     
     

@@ -57,8 +57,10 @@ img {
 }
 
 .invalid {
-  color: #ec1f46;
-  border-bottom: 1px solid #ec1f46;
+  position: absolute;
+  color: red;
+  border-bottom: 1px solid red;
+  font-size: 12px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1544,6 +1546,8 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   grid-column: span 2;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .footer__form--bottom {
@@ -1612,15 +1616,22 @@ template {
 }
 
 .footer__input {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 5px;
+  width: 255px;
+  position: relative;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__input-group {
   margin-bottom: 15px;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
 }
 
 .footer__message {
@@ -1630,6 +1641,8 @@ template {
   margin-bottom: 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__bottom {
@@ -1737,12 +1750,17 @@ template {
 }
 
 .modal__input {
+  position: relative;
   width: 100%;
-  margin-top: 15px;
-  margin-bottom: 5px;
   font-size: 12px;
   line-height: 15px;
   padding: 18px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 .modal__message {
@@ -1835,9 +1853,11 @@ template {
   .packages__big_ul {
     margin-bottom: 20px;
   }
+  .footer__input {
+    width: 100%;
+  }
   .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
   }
 }
 
@@ -1981,10 +2001,6 @@ template {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
-  }
-  .footer__input-group {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
   }
   .footer__logo {
     width: 104px;
@@ -2305,9 +2321,11 @@ template {
     grid-row: 5;
     grid-column: span 6;
   }
+  .footer__input {
+    width: 255px;
+  }
   .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 255px;
   }
   .footer__bottom {
     display: -webkit-box;
@@ -2324,6 +2342,12 @@ template {
   .footer__bottom-ul {
     margin-bottom: 10px;
   }
+  .footer__input {
+    width: 100%;
+  }
+  .footer__input-group {
+    width: 100%;
+  }
   .modal__dialog {
     position: fixed;
     width: 400px;
@@ -2336,7 +2360,6 @@ template {
   .modal__input {
     width: 100%;
     height: 40px;
-    margin-bottom: 15px;
     font-size: 12px;
     line-height: 15px;
     padding: 15px 20px;
@@ -2694,13 +2717,18 @@ template {
     font-size: 12px;
     padding: 10px 20px;
   }
+  .footer__input {
+    width: 100%;
+  }
+  .footer__input-group {
+    width: 100%;
+  }
   .modal__dialog {
     width: 85%;
     padding: 30px;
   }
   .modal__input {
     width: 100%;
-    margin-bottom: 5px;
     padding: 10px 20px;
     height: 30px;
   }
@@ -2729,9 +2757,6 @@ template {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 10px;
-  }
-  .invalid {
-    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

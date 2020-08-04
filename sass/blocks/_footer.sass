@@ -36,6 +36,7 @@
         justify-content: space-between
         flex-wrap: wrap
         grid-column: span 2
+        flex-basis: 100%
         &--bottom
             display: flex
             justify-content: space-between
@@ -76,18 +77,24 @@
         text-decoration: none
         color: inherit       
     &__input
-        width: 100%
-        padding: 20px
-        margin-bottom: 5px
+        width: 255px
+        position: relative
+        padding: 0 20px
+        display: flex
+        flex-basis: 48%
+        flex-wrap: wrap
+        font-size: 12px
+        line-height: 15px
         &-group
             margin-bottom: 15px
-            flex-basis: 48%
     &__message
         min-height: 123px
         outline: none
         resize: none
         margin-bottom: 23px
         flex-basis: 100%
+        font-size: 12px
+        line-height: 15px
     &__bottom
         display: grid
         grid-template-columns: repeat(6, minmax(min-content, 1fr))
