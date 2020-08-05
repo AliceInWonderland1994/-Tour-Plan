@@ -393,7 +393,7 @@
 
 @media (max-width: 630px)
     .packages
-        padding: 20px 0 40px
+        padding: 0 0 40px
         &-wrapper
             grid-template-columns: 1fr
             grid-row-gap: 20px
@@ -566,6 +566,13 @@
     .hotel
         &-slider
             height: 179px
+    .packages
+        &__image
+            width: 100%
+            object-fit: cover
+            object-position: 0 -50px
+            &_five
+                object-position: 0 -200px
 
 @media (min-width: 320px) and (max-width: 480px)
     .container
@@ -610,7 +617,9 @@
         &__image
             width: 100%
             object-fit: cover
-            object-position: 0 0
+            object-position: 0 -50px
+            &_five
+                object-position: 0 -180px
     .footer
         &__input
             width: 100%

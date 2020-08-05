@@ -76,5 +76,16 @@ $(document).ready(function () {
       },
     });
   });
+  $(".subscribe").each(function() {
+    $(this).validate({
+      errorClass: "error",
+      messages: {
+        email: {
+          required: "This field is empty",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
   AOS.init();
 });
