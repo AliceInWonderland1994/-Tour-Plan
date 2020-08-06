@@ -6,6 +6,9 @@
             &__link:hover
                 border-bottom: 1px solid $light
                 transition-duration: 0.5s
+    .footer
+        &__legal
+            margin-left: 26%
 
 @media (max-width: 1200px)
     .container
@@ -54,13 +57,13 @@
         &__big
             &_ul
                 margin-bottom: 20px
-        &__bottom
-            &_
     .footer
         &__input
             width: 100%
             &-group
                 width: 100%
+        &__legal
+            margin-left: 40%
 
 @media (max-width: 992px)
     .container, .newsletter-wrapper
@@ -155,33 +158,41 @@
     .footer
         padding: 73px 0 33px
         &-wrapper
-            grid-template-columns: repeat(6, 1fr)
+            grid-template-columns: repeat(10, 1fr)
             grid-row-gap: 40px
         &__logo
             width: 104px
+            height: 120px
             grid-row: 1 / 2
             grid-column: span 2
         &__social
             &-network
-                grid-row: 1 / 2
-                grid-column: span 4
+                grid-row: 1
+                grid-column: 4 / 10
                 align-self: center
         &__categories
             grid-row: 2 / 3
-            grid-column: span 2
+            grid-column: span 3
         &__legal
-            grid-column: span 2
+            grid-row: 2 / 3
+            grid-column: span 3
+            margin-left: 0
         &__additional
-            grid-column: span 2
+            grid-row: 2 / 3
+            grid-column: span 4
         &__message
             width: 100%
         &__contact
             &-details
-                grid-column: span 5
+                grid-column: span 8
                 grid-row: 3
             &-form
-                grid-column: span 5
+                grid-column: span 8
                 grid-row: 4
+        &__input
+            width: 100%
+            &-group
+                width: 255px 
         &__bottom
             &-ul
                 grid-column: 1 / 5
@@ -366,7 +377,7 @@
                     grid-row: 5
                     grid-column: span 6
         &__input
-            width: 255px
+            width: 100%
             &-group
                 width: 255px
         &__bottom
@@ -378,7 +389,7 @@
         &__input
             width: 100%
             &-group
-                width: 100%
+                width: 255px
     .modal
         &__dialog
             position: fixed
