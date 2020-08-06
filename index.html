@@ -16,7 +16,7 @@
         <div class="container">
             <div class="navbar-top">
                 <a href="#" class="logo"> 
-                    <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo-image">
+                    <img  src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo-image">
                 </a>
                 <form action="#" class="search navbar-top__search navbar-top__search_mobile_hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
@@ -91,7 +91,7 @@
         <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
-    
+
     <section class="hotel">
         <div class="container">
             <div class="hotel-info">
@@ -166,7 +166,10 @@
                         <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
-                    <div class="map"><iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35048.4795681779!2d-80.75322807378757!3d32.143307487284595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11119db70ffab838!2sOcean%20Oak%20Resort%20by%20Hilton%20Grand%20Vacations!5e0!3m2!1sru!2sru!4v1596100453634!5m2!1sru!2sru"></iframe></div>
+                    <div class="map" #mapContainer>
+                        <img class="map__stub" src="img/google_stub.jpeg" alt="Google map">
+                        <iframe id="map" class="map__iframe" src=""></iframe>-->
+                    </div>
                     <!-- /.map -->
                 </div>
                 <!-- /.hotel-right -->
@@ -210,7 +213,7 @@
                         <!-- /.packages__bottom_wrap -->
                     </div>
                     <!-- /.packages__hotel-info -->
-                    <span class="packages__offer packages__offer_big">Flash Offer</span> 
+                    <span class="packages__offer packages__offer_big">Flash Offer</span>
                 </div>
                 <!-- /.packages__big-card -->
                 <div class="packages__card packages__card_blue-haven" data-aos="zoom-in-right" data-aos-duration="500">
@@ -236,7 +239,7 @@
                         <!-- /.packages__mobile_wrapper -->
                     </div>
                     <!-- /.packages__hotel-information -->
-                    <span class="packages__offer">Flash Offer</span> 
+                    <span class="packages__offer">Flash Offer</span>
                 </div>
                 <!-- /.packages__card -->
                 <div class="packages__card packages__card_belle-mare" data-aos="zoom-in-left" data-aos-duration="500">
@@ -262,7 +265,7 @@
                             <!-- /.packages__mobile_wrapper -->
                     </div>
                     <!-- /.packages__hotel-information -->
-                    <span class="packages__offer">Flash Offer</span> 
+                    <span class="packages__offer">Flash Offer</span>
                 </div>
                 <!-- /.packages__card -->
                 <div class="packages__card packages__card_white-palace" data-aos="zoom-in-right" data-aos-duration="500">
@@ -285,10 +288,10 @@
                             <button class="packages__button">Book Now</button>
                         </div>
                     </div>
-                    <!-- /.packages__mobile_wrapper -->                  
+                    <!-- /.packages__mobile_wrapper -->
                     </div>
                     <!-- /.packages__hotel-information -->
-                    <span class="packages__offer">Flash Offer</span>  
+                    <span class="packages__offer">Flash Offer</span>
                 </div>
                 <!-- /.packages__card -->
                 <div class="packages__card packages__card_luxury-palace" data-aos="zoom-in" data-aos-duration="500">
@@ -311,7 +314,7 @@
                             <button class="packages__button">Book Now</button>
                         </div>
                     </div>
-                    <!-- /.packages__mobile_wrapper -->  
+                    <!-- /.packages__mobile_wrapper -->
                     </div>
                     <!-- /.packages__hotel-information -->
                     <span class="packages__offer">Flash Offer</span>
@@ -337,7 +340,7 @@
                             <button class="packages__button">Book Now</button>
                         </div>
                     </div>
-                    <!-- /.packages__mobile_wrapper -->   
+                    <!-- /.packages__mobile_wrapper -->
                     </div>
                     <!-- /.packages__hotel-information -->
                     <span class="packages__offer">Flash Offer</span>
@@ -387,7 +390,7 @@
                             </div>
                             <!-- /.reviews-sliper__profile -->
                             <p class="reviews-slider__text">
-                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend.
                             </p>
                         </div>
                         <!-- /.reviews-slider__item -->
@@ -409,7 +412,7 @@
                             </div>
                             <!-- /.reviews-sliper__profile -->
                             <p class="reviews-slider__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis sequi consequuntur distinctio laudantium maxime ipsam molestiae hic animi iste odio excepturi neque soluta non cupiditate est, eveniet commodi repellendus quia quam ut atque autem molestias. Suscipit minima esse magnam, modi repellendus atque ad, tempore eveniet quae qui vitae neque. 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis sequi consequuntur distinctio laudantium maxime ipsam molestiae hic animi iste odio excepturi neque soluta non cupiditate est, eveniet commodi repellendus quia quam ut atque autem molestias. Suscipit minima esse magnam, modi repellendus atque ad, tempore eveniet quae qui vitae neque.
                             </p>
                         </div>
                         <!-- /.reviews-slider__item -->
@@ -430,7 +433,7 @@
                             </div>
                             <!-- /.reviews-sliper__profile -->
                             <p class="reviews-slider__text">
-                                Dolore necessitatibus atque quod, deleniti corrupti debitis corporis illo! Quam ea aliquid totam enim eligendi quasi cupiditate at quisquam aperiam inventore numquam, laborum dignissimos qui, doloribus laudantium illo voluptates ipsa iure dicta provident tenetur suscipit alias. Repudiandae voluptas, in nihil ratione eius, blanditiis debitis nulla doloribus mollitia ut accusamus reiciendis temporibus eaque dolorum! Voluptatem assumenda nostrum exercitationem natus dolorem reprehenderit esse blanditiis. 
+                                Dolore necessitatibus atque quod, deleniti corrupti debitis corporis illo! Quam ea aliquid totam enim eligendi quasi cupiditate at quisquam aperiam inventore numquam, laborum dignissimos qui, doloribus laudantium illo voluptates ipsa iure dicta provident tenetur suscipit alias. Repudiandae voluptas, in nihil ratione eius, blanditiis debitis nulla doloribus mollitia ut accusamus reiciendis temporibus eaque dolorum! Voluptatem assumenda nostrum exercitationem natus dolorem reprehenderit esse blanditiis.
                             </p>
                         </div>
                         <!-- /.reviews-slider__item -->
@@ -451,9 +454,9 @@
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
                 <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="img/activity-1.jpg" alt="The curious corner 
+                    <img src="img/activity-1.jpg" alt="The curious corner
                     of chamarel" class="card__image">
-                    <h3 class="card__title">The curious corner 
+                    <h3 class="card__title card__title--fir">The curious corner
                         of chamarel</h3>
                     <button class="card__button">Book Now</button>
                 </div>
@@ -461,21 +464,21 @@
                 <div class="card activities__card" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/activity-2.jpg" alt="Gymkhana club golf
                     course" class="card__image">
-                    <h3 class="card__title">Gymkhana club golf
+                    <h3 class="card__title card__title--sec">Gymkhana club golf
                         course</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
                 <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
                     <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
-                    <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+                    <h3 class="card__title card__title--third">Tamarind falls hiking trip - full day</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- /.card -->
                 <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/activity-4.jpg" alt="The blue marine discovery
                     quest" class="card__image">
-                    <h3 class="card__title">The blue marine discovery
+                    <h3 class="card__title card__title--four">The blue marine discovery
                         quest</h3>
                     <button class="card__button">Book Now</button>
                 </div>

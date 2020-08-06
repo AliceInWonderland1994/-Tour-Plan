@@ -75,19 +75,19 @@
                 margin-left: 47px
         &-menu
             padding: 22px 0
+            display: flex
+            justify-content: space-around
             &__link
                 font-size: 12px
                 line-height: 15px
             &__link:hover
                 border-bottom: 1px solid $light
                 transition-duration: 0.5s
-        &-menu
-            justify-content: space-around
     .logo
         max-width: 132px
     .search
         &__input
-            width: 340px
+            max-width: 340px
     .hotel
         padding-bottom: 60px
         &-grid
@@ -98,12 +98,9 @@
             flex-direction: row
         &-slider
             width: 100%
-    .stars
-        flex-basis: 100%
-        margin-bottom: 4px
-        &__rating
-            height: 8px
-            width: 8px
+        &-info
+            height: 100px
+            padding: 23px 0 20px
     .booking
         width: 340px
         padding: 20px
@@ -158,16 +155,21 @@
             flex-wrap: wrap
         &__card
             margin-bottom: 20px
+            width: 145px
             &__blue-haven
                 display: none
     .card
         width: 340px
         height: 255px
+        &__title
+            margin-top: auto
+            margin-bottom: 18px
+            margin-right: 43%
     .footer
         padding: 73px 0 33px
         &-wrapper
             grid-template-columns: repeat(10, 1fr)
-            grid-row-gap: 40px
+            grid-row-gap: 60px
         &__logo
             width: 104px
             height: 120px
@@ -368,6 +370,8 @@
         width: 48%
         height: 255px
     .footer
+        &-wrapper
+            grid-row-gap: 40px
         &__additional
             grid-row: 3
             grid-column: span 5

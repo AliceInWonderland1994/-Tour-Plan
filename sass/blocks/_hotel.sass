@@ -1,10 +1,9 @@
 .hotel
-    padding: 13px 0 70px
+    padding: 23px 0 70px
     &-info
         display: flex
         align-items: center
         justify-content: space-between
-        margin-bottom: 20px
         &__offer
             margin-left: 14px
             margin-top: 4px
@@ -21,7 +20,7 @@
     &-description
         font-size: 12px
         line-height: 15px
-        margin: 3px 0 0 0
+        margin: 0
     &-grid
         display: flex
         justify-content: space-between
@@ -74,7 +73,6 @@
     margin: 0
 .stars
     flex-basis: 100%
-    margin-bottom: 4px
     &__rating
         height: 8px
         width: 8px
@@ -123,7 +121,6 @@
         font-weight: 800
         font-size: 24px
         line-height: 33px
-        margin-bottom: 1px
     &__per-room
         font-size: 12px
         line-height: 16px
@@ -172,16 +169,35 @@
         cursor: pointer
         padding: 13px
 .map
+    position: relative
     width: 347px
     height: 213px
-    background-color: #FAF0BE
     border-radius: 10px
     overflow: hidden
-    &__iframe
-        width: 100%
+    &__stub
+        position: absolute
+        object-fit: cover
         height: 100%
-        height: 213
+        width: 100%
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        z-index: 50
+    &__stub:hover
+        z-index: 0
+        transition-duration: 0.5s
+    &__iframe
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        height: 100%
+        width: 100%
+        z-index: 50
+        outline: none
         border: none
-        aria-hidden: false
-        tabindex: 0
+
+
 
