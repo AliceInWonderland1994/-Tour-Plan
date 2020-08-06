@@ -99,7 +99,7 @@
         &-slider
             width: 100%
         &-info
-            height: 100px
+            min-height: 100px
             padding: 23px 0 20px
     .booking
         width: 340px
@@ -289,22 +289,25 @@
         display: flex
         flex-basis: 50%
         justify-content: flex-end
+        height: 18px
         &__rating
             margin-left: 3px
-            height: 6px
-            width: 6px
+            height: 18px
+            width: 8px
     .hotel
-        padding: 18px 0 40px 0 
+        padding: 0 0 40px 0 
         &-wrapper
             justify-content: space-between
         &-info
+            min-height: 90px
+            padding: 5px 0 38px
             &__text
                 width: 100%
             &__rating
                 display: none
             &__offer
                 order: -1
-                margin-left: 0
+                margin: 0 0 10px
         &-details
             flex-direction: column
             min-height: 450px
@@ -338,11 +341,21 @@
             &_ul
                 margin-bottom: 16px
     .newsletter
+        height: 319px
         &-wrapper
             flex-direction: column
             align-items: flex-start
-            max-width: 576px
+            justify-content: center
             width: 92%
+        &__title
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            margin-bottom: 37px
+        &__strong
+            font-weight: 600
+            font-size: 30px
+            line-height: 38px
     .reviews
         padding: 40px 0 50px
         &-slider
@@ -387,11 +400,11 @@
                 grid-column: span 10
             &-form
                 grid-row: 5
-                grid-column: span 9
+                grid-column: span 10
         &__input
             width: 100%
             &-group
-                width: 100%
+                width: 255px
         &__bottom
             display: flex
             flex-direction: column
@@ -561,6 +574,10 @@
             &-form
                 grid-row: 7
                 grid-column: 1
+        &__input
+            width: 100%
+            &-group
+                width: 100%
         &__social
             &-links
                 margin: 0
@@ -608,7 +625,7 @@
 
 @media (min-width: 320px) and (max-width: 480px)
     .container
-        width: 90%
+        width: 87%
     .navbar
         &-menu
             &__search
@@ -652,6 +669,10 @@
             object-position: 0 -50px
             &_five
                 object-position: 0 -180px
+    .reviews
+        &-slider
+            &__text
+                text-align: left
     .footer
         &__input
             width: 100%
