@@ -1,6 +1,5 @@
 $(document).ready(function () {
   const dynamicMap = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35048.4795681779!2d-80.75322807378757!3d32.143307487284595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11119db70ffab838!2sOcean%20Oak%20Resort%20by%20Hilton%20Grand%20Vacations!5e0!3m2!1sru!2sru!4v1596100453634!5m2!1sru!2sru`
-
   let hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
