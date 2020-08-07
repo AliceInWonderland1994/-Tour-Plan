@@ -82,6 +82,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please specify your phone number",
+          minlenght: "Number must be more than 15 letters",
         },
       },
     });
