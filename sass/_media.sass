@@ -57,6 +57,11 @@
         &__big
             &_ul
                 margin-bottom: 20px
+    .newsletter
+        &-wrapper
+            align-items: center
+        &__title
+            margin-bottom: 27px
     .footer
         &__input
             width: 100%
@@ -142,6 +147,10 @@
                 grid-column: 2
             &_blue-haven
                 display: none
+    .newsletter
+        &-wrapper
+            flex-direction: column
+            align-items: flex-start
     .reviews
         padding: 40px 0 60px
         &-slider
@@ -357,7 +366,7 @@
             font-weight: 300
             font-size: 20px
             line-height: 25px
-            margin-bottom: 37px
+            margin-bottom: 27px
         &__strong
             font-weight: 600
             font-size: 30px
@@ -732,37 +741,8 @@
         &__message
             width: 100%
             margin-bottom: 4px
-            height: 30%
-        &__title
-            margin: 0
-            font-size: 16px
-        &__button
-            height: 28px
-            padding: 6px
-            width: 50%
-            order: -1
-        &__form
-            &--bottom
-                display: flex
-                align-items: flex-end
-
-@media screen and (max-height: 320px)
-    .modal
-        &__dialog
-            position: fixed
-            width: 80%
-            height: 90%
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            padding: 10px 40px
-        &__input
-            width: 100%
-            height: 10px
-        &__message
-            width: 100%
-            margin-bottom: 6px
             height: 50px
+            padding: 10px 23px
         &__title
             margin: 0
             font-size: 16px
@@ -773,11 +753,4 @@
         &__form
             &--bottom
                 display: flex
-                -ms-flex-direction: row
                 align-items: flex-end
-
-
-    
-
-        
-

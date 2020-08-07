@@ -43,7 +43,7 @@ $(document).ready(function () {
           ()=>{
           })
 
-      const modalButton = $("[data-toggle=modal]");
+    const modalButton = $("[data-toggle=modal]");
     const closeModalButton = $(".modal__close");
     modalButton.on("click", openModal);
     closeModalButton.on("click", closeModal);
@@ -81,7 +81,7 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Please specify your phone number"
+          required: "Please specify your phone number",
         },
       },
     });
@@ -97,5 +97,5 @@ $(document).ready(function () {
       },
     });
   });
-  AOS.init();
+  $(elements).lazyLoadXT();
 });
