@@ -57,9 +57,6 @@
         &__big
             &_ul
                 margin-bottom: 20px
-    .newsletter
-        &-wrapper
-            align-items: center
         &__title
             margin-bottom: 27px
     .footer
@@ -148,9 +145,10 @@
             &_blue-haven
                 display: none
     .newsletter
-        &-wrapper
-            flex-direction: column
-            align-items: flex-start
+        height: 260px
+        padding: 92px 0 0 
+        &__title
+            margin-bottom: 27px 
     .reviews
         padding: 40px 0 60px
         &-slider
@@ -259,7 +257,7 @@
                 left: 0
                 top: 0
                 right: 0
-                z-index: 99 
+                z-index: 99
         &-bottom
             display: none
             position: fixed
@@ -270,6 +268,7 @@
             padding-top: 30px
             &_visible
                 display: block
+                overflow: auto
         &-menu
             flex-direction: column
             &__item
@@ -357,20 +356,20 @@
                 margin-bottom: 16px
     .newsletter
         height: 319px
+        padding: 76px 0 0
         &-wrapper
-            flex-direction: column
-            align-items: flex-start
-            justify-content: center
+            width: 92%
             max-width: 576px
-        &__title
+            flex-direction: column
+        &-title
             font-weight: 300
             font-size: 20px
             line-height: 25px
             margin-bottom: 27px
-        &__strong
-            font-weight: 600
-            font-size: 30px
-            line-height: 38px
+            &__strong
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
     .reviews
         padding: 40px 0 50px
         &-slider
@@ -540,18 +539,16 @@
             margin-bottom: 20px
         &-slider
             height: 250px
-    .newsletter
-        padding: 76px 0 83px
         &__title
-            margin-bottom: 37px
-    &-title
-        font-weight: 300
-        font-size: 20px
-        line-height: 25px
-        &__strong
-            font-weight: 600
-            font-size: 30px
-            line-height: 38px
+            margin-bottom: 27px
+        &-title
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            &__strong
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
     .subscribe
         width: 100%
     .activities
@@ -646,6 +643,7 @@
         width: 87%
     .navbar
         &-menu
+            overflow: auto
             &__search
                 &_mobile
                     &_visible
