@@ -22,7 +22,6 @@ $(document).ready(function () {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
-  keyboard: true,
   });
   
   $('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg'});
