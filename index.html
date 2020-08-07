@@ -580,7 +580,7 @@
                                 <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
                             </div>
                             <div class="footer__input-group">
-                                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+                                <input type="number" class="input footer__input" placeholder="Phone Number*" name="phone" required />
                             </div>
                             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                             <div class="form footer__form footer__form--bottom">
@@ -617,15 +617,17 @@
             </a>
             <h3 class="modal__title">Booking</h3>
             <form action="send.php" method="POST" class="form modal__form">
+                <div class="modal__wrap">
                     <div class="modal__wrapper">
                         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
                         <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required/>
                         <input type="email" class="input modal__input" placeholder="Email*" name="email" required/>
                     </div>
-                <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-                <div class="form modal__form modal__form--bottom">
-                    <button class="button modal__button" type="submit">Send</button>
-                    <span class="info modal__info">* Required Fields</span>
+                    <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+                    <div class="form modal__form modal__form--bottom">
+                        <button class="button modal__button" type="submit">Send</button>
+                        <span class="info modal__info">* Required Fields</span>
+                    </div>
                 </div>
            </form>
         </div>
@@ -641,7 +643,7 @@
             <h3 class="modal__title">Send us a feedback</h3>
             <form action="send.php" method="POST" class="form modal__form" id="modal-form">
                 <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
-                <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required />
+                <input type="tel" pattern="\d [0-9]-[0-9]{3}-[0-9]{3}" class="input modal__input" placeholder="Phone Number*" name="phone" required />
                 <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
                 <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                 <div class="form modal__form modal__form--bottom">

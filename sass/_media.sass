@@ -710,39 +710,7 @@
             margin-bottom: 10px
             font-size: 10px
 
-@media (min-width: 731px), (orientation: landscape)
-    .modal
-        &__dialog
-            position: fixed
-            width: 85%
-            height: 85%
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            padding: 30px 40px
-        &__form
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-            &--bottom
-                width: 100%
-                display: flex
-                justify-content: space-between
-                align-items: flex-end
-        &__button
-            width: 50%
-        &__wrapper
-            width: 50%
-            margin-bottom: 10px
-        &__input
-            width: 90%
-            height: 30%
-        &__message
-            width: 50%
-        &__info
-            margin-bottom: 0
-
-@media (min-width: 640px), (orientation: landscape)
+@media (min-width: 540px) and (max-width: 731px), (orientation: landscape)
     .modal
         &__dialog
             position: fixed
@@ -751,57 +719,29 @@
             top: 50%
             left: 50%
             transform: translate(-50%, -50%)
-            padding: 30px 40px
-        &__form
+            padding: 15px 30px
+        &__wrap
+            height: 100%
             display: flex
-            flex-wrap: wrap
             justify-content: space-between
-            &--bottom
-                width: 100%
-                display: flex
-                justify-content: space-between
-                align-items: flex-end
-        &__button
-            width: 50%
+            flex-wrap: wrap
         &__wrapper
-            width: 50%
-            margin-bottom: 10px
-        &__input
-            width: 90%
-            height: 30%
+            width: 70%
+            height: 100%
         &__message
-            width: 50%
-        &__info
+            width: 70%
             margin-bottom: 0
-
-@media (min-width: 568px), (orientation: landscape)
-    .modal
-        &__dialog
-            position: fixed
-            width: 95%
-            height: 95%
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            padding: 20px 20px
+            height: auto
         &__title
-            margin: auto
+            margin: 0
+            font-size: 16px
         &__form
             &--bottom
-                width: 100%
                 display: flex
-                justify-content: space-between
-                align-items: center
-        &__button
-            width: 50%
-        &__wrapper
-            width: 50%
-            margin-bottom: 10px
-        &__input
-            width: 90%
-            height: 24%
-        &__message
-            width: 50%
-        &__info
-            margin-bottom: 0
-    
+                flex-direction: column
+                width: 25%
+                align-items: flex-start
+                justify-content: flex-end
+
+        
+

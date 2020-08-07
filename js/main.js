@@ -34,16 +34,16 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    const mapFrame = $("#map");
-    const container = $("#mapContainer")
-    mapFrame.hover(()=>{
-          container.removeClass('stub');
-          mapFrame.attr('src', dynamicMap);
-          mapFrame.removeClass('hidden');
+
+      const mapFrame = $("#map");
+      const container = $("#mapContainer")
+      mapFrame.hover(()=>{
+              mapFrame.attr('src', dynamicMap);
           },
-        ()=>{
-        })
-    const modalButton = $("[data-toggle=modal]");
+          ()=>{
+          })
+
+      const modalButton = $("[data-toggle=modal]");
     const closeModalButton = $(".modal__close");
     modalButton.on("click", openModal);
     closeModalButton.on("click", closeModal);
