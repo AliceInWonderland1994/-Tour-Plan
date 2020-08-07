@@ -97,5 +97,7 @@ $(document).ready(function () {
       },
     });
   });
-  $(elements).lazyLoadXT();
+  $('#phone').mask('7(000)-000-0000');
+  $('#tel').mask('7(000)-000-0000');
+  $('#number').mask('7(000)-000-0000');
 });
