@@ -9,6 +9,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$subscribe = $_POST['subscribe'];
 
 $subsribeHeader = "Location: subscribe.html";
 $thankyouHeader = "Location: thankyou.html";
@@ -16,13 +17,14 @@ $thankyouHeader = "Location: thankyou.html";
 $title="";
 $body="";
 
-if(empty($email)) {
+if(empty($subscribe)) {
    
     $title = "Новое обращение Best Tour Plan";
     $body = "
     <h2>Новое обращение </h2>
     <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
+    <b>Телефон:</b> $phone<br>
+    <b>Электронный адрес:</b> $email<br>
     <b>Сообщение:</b><br>$message
     ";
 }
@@ -30,7 +32,7 @@ else {
     $title = "Подписка на новости Best Tour Plan";
     $body = "
     <h2>Запрос на подписку</h2>
-    <b>Адрес электронной почты:</b>$email<br>
+    <b>Адрес электронной почты:</b>$subscribe<br>
     ";
 }
 // Настройки PHPMailer
