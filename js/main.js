@@ -33,13 +33,13 @@ $(document).ready(function () {
 
   $(document).ready(function () {
 
-      const mapFrame = $("#map");
-      const container = $("#mapContainer")
-      mapFrame.hover(()=>{
-              mapFrame.attr('src', dynamicMap);
-          },
-          ()=>{
-          })
+    const mapFrame = $("#map");
+    mapFrame.hover(()=>{
+    if(!mapFrame.attr('src')){
+    mapFrame.attr('src', dynamicMap);
+    }
+    },
+    ()=>{})
 
     const modalButton = $("[data-toggle=modal]");
     const closeModalButton = $(".modal__close");
